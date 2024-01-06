@@ -1,0 +1,62 @@
+body{
+    background-color: black;
+}
+.loader{
+    position: absolute;
+    left:300px;
+    top:100px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    animation: load 1s steps(4) 0s infinite normal; 
+}
+#holder1{
+    padding: 0;
+    margin-right:3px;
+}
+#holder2{
+    padding: 0;
+    margin:0;
+}
+#box1{
+    height: 15px;
+    width: 15px;
+    background-color: green;
+    border-radius: 50%;
+    margin-bottom:3px;
+}
+#box2{
+    height: 15px;
+    width: 15px;
+    background-color: blue;
+    border-radius: 50%;
+}
+#box3{
+    height: 15px;
+    width: 15px;
+    background-color: blue;
+    margin-bottom: 3px;
+    border-radius: 50%;
+}
+#box4{
+    height: 15px;
+    width: 15px;
+    position: relative;
+    background-color: blue;
+    border-radius: 50%;
+}
+@keyframes load {
+    0%{
+        rotate:0deg;
+        transform: scale(1);
+    }
+    50%{
+        rotate:180deg;
+        transform: scale(2);
+        
+    }
+    100%{
+        rotate:360deg;
+        transform: scale(1);
+    }
+}
